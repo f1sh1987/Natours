@@ -20,3 +20,9 @@ body {
     line-height: 1.7;
     color: #777;
 }
+
+.header{
+  /*  95% of the viewport height */
+    height:95vh;
+    background-image:  url(../img/hero.jpg);
+}
