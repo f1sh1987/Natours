@@ -8,16 +8,14 @@ body {
   padding: 30px;
 }
 
-
-
-.heading-primary{
+.heading-primary {
   color: $color-white;
   text-transform: uppercase;
   /* back part of element that was transisted ist hidden */
   backface-visibility: hidden;
   margin-bottom: 60px;
 
-  &--main{
+  &--main {
     /* uses complete width of container */
     display: block;
     font-size: 60px;
@@ -30,7 +28,7 @@ body {
     animation-timing-function: ease-out;
   }
 
-  &--sub{
+  &--sub {
     display: block;
     font-size: 20px;
     font-weight: 700;

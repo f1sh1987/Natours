@@ -1,0 +1,8 @@
+@mixin  clearfix {
+  &::after{
+    //Clears the float problem $=0
+    content:"";
+    display: table;
+    clear:both;
+  }
+}
