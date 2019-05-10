@@ -1,7 +1,7 @@
 .row {
   // = 1140px if vp smaller will fill 100% of available space
   max-width: $grid-width;
-  background-color: #eee;
+
   //center block element in block element
   margin: 0 auto;
 
@@ -13,7 +13,7 @@
   @include clearfix;
   //Select all elements with beginning $= ends with  (attribute selector)
   [class^="col-"] {
-    background-color: orangered;
+
     float: left;
 
     &:not(:last-child) {
