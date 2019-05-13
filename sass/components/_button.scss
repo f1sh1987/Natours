@@ -51,6 +51,16 @@
 
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:after {
+      background-color: $color-primary;
+    }
+
+  }
+
   &--animated {
     animation: moveInButton 1s ease-out .75s;
     /* value of 0% will be set before animation starts f.e. opacity 0 */
