@@ -1,19 +1,64 @@
-.story{
-  width:75%;
+.story {
+  width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem, rgba($color-black,.1);
-  background-color: $color-white;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  background-color: rgba($color-white,.6);
   border-radius: 3px;
   padding: 6rem;
-  font-size:$default-font-size;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
 
-  &__shape{
-    width:15rem;
+  &__shape {
+    width: 15rem;
     height: 15rem;
-    background-color: orangered;
-    float:left;
+    position: relative;
+    float: left;
     //element must be floated
     -webkit-shape-outside: circle(50% at 50% 50%);
+    //text to float around
     shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    //make the margin
+    transform: translate(-3rem) skewX(12deg);
+  }
+
+  &__img {
+    //height of the shape / parent
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    transition: all .5s;
+    //moving bug fix
+    backface-visibility: hidden;
+  }
+
+  //hover über story ändert caption
+  &:hover &__caption {
+    opacity: .8;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
