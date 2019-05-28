@@ -15,7 +15,7 @@
     width: 100%;
     //hides backpart of an element
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: $border-radius;
     //hides children overflow for corners
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);

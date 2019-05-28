@@ -1,6 +1,6 @@
 /* Style ELements under special conditions  */
 .btn {
-  &:link,
+  &,&:link,
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -9,6 +9,11 @@
     border-radius: 100px;
     transition: all .2s;
     position: relative;
+    font-size:$default-font-size;
+
+    //change for <button> element
+    border: none;
+    cursor:pointer;
 
     &:hover {
       transform: translateY(-3px);
@@ -21,7 +26,8 @@
       }
     }
 
-    &:active {
+    &:active, &:focus {
+      outline:none;
       transform: translateY(-1px);
       box-shadow: 0 5px 10px rgba($color-black, .2)
     }
