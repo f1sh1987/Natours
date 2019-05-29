@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
             <span class=heading-primary--main>Outdoors</span>
             <span class=heading-primary--sub>is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
     </div>
 </header>
 <!-- SEO -->
@@ -132,7 +132,7 @@
             </div>
         </div>
     </section>
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Most popular tours
@@ -168,7 +168,7 @@
                                 <p class="card__price-value">$297</p>
 
                             </div>
-                            <a href="#" class="btn btn--white">Book now</a>
+                            <a href="#popup" class="btn btn--white">Book now</a>
                         </div>
                     </div>
 
@@ -203,7 +203,7 @@
                                 <p class="card__price-value">$497</p>
 
                             </div>
-                            <a href="#" class="btn btn--white">Book now</a>
+                            <a href="#popup" class="btn btn--white">Book now</a>
                         </div>
                     </div>
 
@@ -238,7 +238,7 @@
                                 <p class="card__price-value">$897</p>
 
                             </div>
-                            <a href="#" class="btn btn--white">Book now</a>
+                            <a href="#popup" class="btn btn--white">Book now</a>
                         </div>
                     </div>
 
@@ -246,7 +246,7 @@
             </div>
         </div>
         <div class="u-center-text u-margin-bottom-huge">
-            <a href="#" class="btn btn--green">
+            <a href="#F" class="btn btn--green">
                 Discover all tours
             </a>
         </div>
@@ -370,11 +370,39 @@
         <div class="col-1-of-2">
             <p class="footer__copyright">
                 Built by <a href="" class="footer__link">Andreas Fischer</a> for my online course
-                <a href="" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Andreas Fischer. You are 100% allowed to use this webpage for both...
+                <a href="" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Andreas Fischer. You are
+                100% allowed to use this webpage for both...
             </p>
         </div>
     </div>
 </footer>
+
+<div class="popup" id="popup">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                booking</h3>
+            <p class="popup__text"> Texte werden einerseits durch pragmatische, also situationsbezogene, „textexterne“
+                Merkmale, andererseits durch sprachliche, „textinterne“ Merkmale bestimmt.[1] In der Sprach- und
+                Kommunikationswissenschaft existieren viele verschiedene Textdefinitionen nebeneinander, die anhand
+                verschiedener Textualitäts­kriterien Texte und „Nicht-Texte“ voneinander trennen. Weiter gefasste
+                Textbegriffe schließen auch Illustrationen oder Elemente der nonverbalen Kommunikation (etwa Mimik und
+                Gestik) in den Text ein.[2] Unter Umständen kann sogar eine reine Bildsequenz als Text gelten, wenn
+                damit erkennbar eine kommunikative Funktion erfüllt wird.[3] Der Begriff des „diskontinuierlichen“
+                Textes aus dem Bereich der Sprachdidaktik umfasst Texte, die nicht fortlaufend geschrieben sind und sich
+                teilweise nicht-sprachlicher Mittel bedienen, wie Formulare, Tabellen und Listen, Grafiken und
+                Diagramme. </p>
+            <a href="#" class="btn btn--green">Book now</a>
+
+        </div>
+    </div>
+</div>
 <!--
 <section class="grid-test">
     <div class="row">
