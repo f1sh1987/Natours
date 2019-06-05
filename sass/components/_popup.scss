@@ -10,6 +10,7 @@
   visibility: hidden;
   transition: all .3s;
 
+
    //id of the popup
   &:target{
     opacity:1;
@@ -19,6 +20,13 @@
   &:target &__content{
     opacity:1;
     transform: translate(-50%,-50%) scale(1);
+    @include respond(tab-port){
+      transform: translate(-50%,-50%) scale(.9);
+    }
+
+    @include respond(phone){
+      transform: translate(-50%,-50%) scale(.8);
+    }
   }
 
   &__close{
@@ -51,11 +59,21 @@
     transform: translate(-50%,-50%) scale(.25);
     transition: all .4s .2s;
 
+    @include respond(tab-land){
+      display:inline-block;
+      width:100%;
+    }
+
+
   }
 
   &__left{
 width:33.333333%;
     display:table-cell;
+    @include respond(tab-land){
+      display:inline-block;
+      width:100%;
+    }
 
   }
   &__right{
@@ -63,10 +81,20 @@ width: 66.6666667%;
     display:table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land){
+     display:inline-block;
+      width:100%;
+    }
   }
   &__img{
     display:block;
     width:100%;
+
+    @include respond(tab-land){
+      width:50%;
+      float:left;
+    }
   }
   &__text{
 font-size:1.4rem;
@@ -82,5 +110,10 @@ font-size:1.4rem;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone){
+      -moz-column-count: 1;
+      column-count: 1;
+    }
   }
 }
